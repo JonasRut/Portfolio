@@ -10,7 +10,7 @@ function ProjectDisplay() {
     <div className="project">
         <div className="header">
           <h1>{project.name}</h1>
-          </div>
+        </div>
         <img src={project.image} alt="project image"/>
         <p className="skills"><b>Skills:</b> {project.skills}</p>
         <p className="description">{project.describtion}</p>

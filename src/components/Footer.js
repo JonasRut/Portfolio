@@ -34,6 +34,7 @@ function Footer() {
         </div>
         <div className="text">
             <button className="footerButton" onClick={() => navigate("mailto:mailjorut@gmail.com")}>mailjorut@gmail.com</button>
+            <p>This portfolio was built with React</p>
             <p>&copy; 2023 JonasRut.github.com/portfolio</p>
         </div>
     </div>
