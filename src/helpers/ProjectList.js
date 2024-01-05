@@ -14,7 +14,7 @@ export const ProjectList = [
         name: "Gyroscope",
         image: Proj2,
         skills: "Fusion360, 3D Printing",
-        describtion: "For school I am part of a group called the Technology Student Association (TSA). In TSA my group was tasked to complete the challenge of building an RC Car and racing it at the regional and state competitions. There was also a determining factor of carrying marbles in the race that could dock points from our lap score if dropped. To carry the marbles in the specified cup I created a gyroscope that would stay level to the ground as the car took sharp turn with the hope of preventing spillage. I also added a barrier for additional insurance."
+        describtion: "In high school I was part of the Technology Student Association (TSA). In TSA my group was tasked to complete the challenge of building an RC Car and racing it at the regional and state competitions. There was also a determining factor of carrying marbles in the race that could dock points from our lap score if dropped. To carry the marbles in the specified cup I created a gyroscope that would stay level to the ground as the car took sharp turns with the hope of preventing spillage. I also added a barrier for additional insurance."
     },
     {
         name: "Key Holder",

@@ -7,7 +7,7 @@
   
   .about {
     width: 100%;
-    height: calc(60vh - 10px);
+    /* height: calc(60vh - 10px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,11 +16,16 @@
     background-color: #21325e;
     color: #f0f0f0;
     padding-bottom: 15vh;
+    /* padding-top: 15vh; */
   }
   
+  .about .intro {
+    padding-bottom: 1vh;
+  }
+
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
+    font-size: 5vw;
     color: #e9d35b;
     height: 50px;
   }
@@ -28,7 +33,7 @@
   .about .prompt {
     width: 40%;
     font-size: 30px;
-    margin-top: 10vh;
+    /* margin-top: 10vh; */
   }
   .prompt svg {
     font-size: 60px;

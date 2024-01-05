@@ -29,9 +29,6 @@ function Navbar() {
             <div className="link"> 
                 <Link to="/portfolio/projects"> Projects </Link>
             </div>
-            <div className="link">
-            <Link to="/portfolio/experience"> Experience </Link>
-            </div>
         </div>
     </div>
   );

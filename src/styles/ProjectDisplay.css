@@ -1,6 +1,6 @@
 .project {
     width: 100%;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +8,9 @@
   }
   
   .project h1 {
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
     color: #3e497a;
-    font-size: 35px;
+    font-size: 5vw;
   }
   .project img {
     height: 40vw;
@@ -33,15 +33,17 @@
   }
 
   .project .description {
-    font-size: 4vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    font-size: 3vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-bottom: 1vh;
+    margin-top: 5vh;
   }
 
   .project .skills {
     margin-left: 3vw;
     margin-right: 3vw;
+    font-size: 2vw;
   }
 
   .project .header { 
