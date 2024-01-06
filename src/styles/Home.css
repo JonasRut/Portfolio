@@ -7,7 +7,6 @@
   
   .about {
     width: 100%;
-    /* height: calc(60vh - 10px); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +15,6 @@
     background-color: #21325e;
     color: #f0f0f0;
     padding-bottom: 15vh;
-    /* padding-top: 15vh; */
   }
   
   .about .intro {

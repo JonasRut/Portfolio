@@ -18,7 +18,7 @@ function Home() {
         </div>
         <div className="prompt">
           <p> 
-            A freshman at the Rochester Institute of Technology with a passion for learning and creating.
+            A first-year at the Rochester Institute of Technology with a passion for learning and creating.
           </p>
           <div className="buttons">
             <div className="buttonContainer">
@@ -48,11 +48,11 @@ function Home() {
             <span>Python, C</span>
           </li>
           <li className="item">
-            <h2>Knoledge In</h2>
+            <h2>Knowledge In</h2>
             <span>Rust, HTML, CSS, C++, SQL</span>
           </li>
           <li className="item">
-            <h2>Computer Aided Software</h2>
+            <h2>Computer Aided Sdoftware</h2>
             <span>Fusion 360</span>
           </li>
         </ol>
