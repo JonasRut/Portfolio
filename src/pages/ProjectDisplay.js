@@ -11,7 +11,7 @@ function ProjectDisplay() {
     }
 
     let displayButton = true
-    if (id == 0) {
+    if (id === 0) {
       displayButton = false
     }
 
