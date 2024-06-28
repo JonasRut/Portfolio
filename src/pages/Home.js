@@ -52,7 +52,7 @@ function Home() {
             <span>Rust, HTML, CSS, C++, SQL</span>
           </li>
           <li className="item">
-            <h2>Computer Aided Sdoftware</h2>
+            <h2>Computer Aided Design</h2>
             <span>Fusion 360</span>
           </li>
         </ol>
