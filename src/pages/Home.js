@@ -18,7 +18,7 @@ function Home() {
         </div>
         <div className="prompt">
           <p> 
-            A first-year at the Rochester Institute of Technology with a passion for learning and creating.
+            A student at the Rochester Institute of Technology with a passion for learning and creating.
           </p>
           <div className="buttons">
             <div className="buttonContainer">
