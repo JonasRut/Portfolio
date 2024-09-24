@@ -46,7 +46,7 @@ function Home() {
         <ol className="list">
           <li className="item">
             <h2>Languages / Applications</h2>
-            <span>Python, Java, C, C#, HTML, CSS, React, C++, SQL, WSL, Linux, MATLAB</span>
+            <span>Python, Java, C, C#, HTML, CSS, React, SQL, Linux, MATLAB</span>
           </li>
           <li className="item">
             <h2>Computer Aided Design</h2>
