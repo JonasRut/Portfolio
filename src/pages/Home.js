@@ -18,7 +18,7 @@ function Home() {
         </div>
         <div className="prompt">
           <p> 
-            A first-year at the Rochester Institute of Technology with a passion for learning and creating.
+            A Mechanical Engineering major at the Rochester Institute of Technology with a passion for learning and creating
           </p>
           <div className="buttons">
             <div className="buttonContainer">
@@ -38,22 +38,19 @@ function Home() {
             </div>
           </div>
           <button onClick={() => navigate("mailto:mailjorut@gmail.com")}>mailjorut@gmail.com</button>
+          <button onClick={() => navigate("mailto:jmr3062@rit.edu")}>jmr3062@rit.edu</button>
         </div>
       </div>
       <div className="skills"> 
         <h1>Skills</h1>
         <ol className="list">
           <li className="item">
-            <h2>Languages</h2>
-            <span>Python, C</span>
-          </li>
-          <li className="item">
-            <h2>Knowledge In</h2>
-            <span>Rust, HTML, CSS, C++, SQL</span>
+            <h2>Languages / Applications</h2>
+            <span>Python, Java, C, C#, HTML, CSS, React, C++, SQL, WSL, Linux, MATLAB</span>
           </li>
           <li className="item">
             <h2>Computer Aided Design</h2>
-            <span>Fusion 360</span>
+            <span>Fusion 360, OnShape</span>
           </li>
         </ol>
       </div>

@@ -2,6 +2,8 @@ import Proj1 from "../assets/game.PNG";
 import Proj2 from "../assets/gyroscope.jpg";
 import Proj3 from "../assets/KeyHolder3.png";
 import Proj4 from "../assets/CS50xCertificate.png";
+import Proj5 from "../assets/ritLogo.png";
+import Proj6 from "../assets/astro.png";
 
 export const ProjectList = [
     {
@@ -32,4 +34,26 @@ export const ProjectList = [
         describtion: "Harvard and several other schools provide many of there courses online for completely free. I wanted to take advantage of this and learn more about computer science and programming from this course which has been useful in current problem solving.",
         additionalLink: ""
     },
+    {
+        name: "Word Search (Comp Sci)",
+        image: Proj5,
+        skills: "Python",
+        describtion: "For this final project in Computer Science 1 we were given the task to write python scripts that would analyze word data by trendiness, frequency, similarity, etc.",
+        additionalLink:  ""
+    },
+    {
+        name: "Compiler and Interpreter (Comp Sci)",
+        image: Proj5,
+        skills: "Java",
+        describtion: "For this project in Computer Science 2 we were given the task to create a compiler and an interpreter capable of running low level operations, holding and loading variables.",
+        additionalLink:  ""
+    }, 
+    {
+        name: "Astro",
+        image: Proj6,
+        skills: "Java, JavaFX",
+        describtion: "A puzzle game were the astronaught has to move its way to the moon but can only move all the way until it hits a robot. A hint button was required that moved the player to the next spot \
+        along a solved path.",
+        additionalLink: ""
+    }
 ];
