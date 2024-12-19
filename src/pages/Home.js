@@ -22,11 +22,6 @@ function Home() {
           </p>
           <div className="buttons">
             <div className="buttonContainer">
-              <IconButton className="button" onClick={() => navigate("https://www.instagram.com/jorut1/")}>
-                <InstagramIcon />
-              </IconButton>
-            </div>
-            <div className="buttonContainer">
             <IconButton className="button" onClick={() => navigate("https://www.linkedin.com/in/jonas-rutkowski-63958923a/")}>
               <LinkedInIcon />
             </IconButton>
@@ -37,7 +32,7 @@ function Home() {
             </IconButton>
             </div>
           </div>
-          <button onClick={() => navigate("mailto:mailjorut@gmail.com")}>mailjorut@gmail.com</button>
+          <button onClick={() => navigate("mailto:jonasrutkowski6@gmail.com")}>jonasrutkowski6@gmail.com</button>
           <button onClick={() => navigate("mailto:jmr3062@rit.edu")}>jmr3062@rit.edu</button>
         </div>
       </div>

@@ -16,11 +16,6 @@ function Footer() {
         <div className="socialMedia">
           <div className="buttons">
             <div className="buttonContainer">
-              <IconButton className="button" onClick={() => navigate("https://www.instagram.com/jorut1/")}>
-                <InstagramIcon />
-              </IconButton>
-            </div>
-            <div className="buttonContainer">
             <IconButton className="button" onClick={() => navigate("https://www.linkedin.com/in/jonas-rutkowski-63958923a/")}>
               <LinkedInIcon />
             </IconButton>
@@ -33,7 +28,7 @@ function Footer() {
           </div>
         </div>
         <div className="text">
-            <button className="footerButton" onClick={() => navigate("mailto:mailjorut@gmail.com")}>mailjorut@gmail.com</button>
+            <button className="footerButton" onClick={() => navigate("mailto:jonasrutkowski6@gmail.com")}>jonasrutkowski6@gmail.com</button>
             <p>This portfolio was built with React</p>
             <p>&copy; 2023 JonasRut.github.com/portfolio</p>
         </div>
