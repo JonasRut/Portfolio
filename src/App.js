@@ -1,16 +1,33 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
+import TagManager from 'react-gtm-module';
 
 function App()
 {
+  const location = useLocation();
+
+  useEffect(() => {
+    const tagManagerArgs = {
+        gtmId: 'G-6BSYJ743Y3'
+    };
+    TagManager.initialize(tagManagerArgs);
+    
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'pageview',
+        pagePath: location.pathname,
+      },
+    });
+  }, [location]);
+
   return <div className="App">
       <Router>
         <Navbar />

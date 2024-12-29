@@ -1,9 +1,26 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, {useEffect} from 'react';
+import { useParams, useLocation } from 'react-router-dom';
 import { ProjectList } from '../helpers/ProjectList';
-import "../styles/ProjectDisplay.css"
+import "../styles/ProjectDisplay.css";
+import TagManager from 'react-gtm-module';
 
 function ProjectDisplay() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const tagManagerArgs = {
+        gtmId: 'G-6BSYJ743Y3'
+    };
+    TagManager.initialize(tagManagerArgs);
+    
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'pageview',
+        pagePath: location.pathname,
+      },
+    });
+  }, [location]);
+
     const { id } = useParams();
     const project = ProjectList[id];
     const navigate = (url) => {
