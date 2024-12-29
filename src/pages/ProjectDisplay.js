@@ -5,44 +5,28 @@ import "../styles/ProjectDisplay.css";
 import TagManager from 'react-gtm-module';
 
 function ProjectDisplay() {
-  const location = useLocation();
+  const { id } = useParams();
+  const project = ProjectList[id];
+  const navigate = (url) => {
+    window.open(url, "_blank", "noreferrer");
+  }
 
-  useEffect(() => {
-    const tagManagerArgs = {
-        gtmId: 'G-6BSYJ743Y3'
-    };
-    TagManager.initialize(tagManagerArgs);
-    
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'pageview',
-        pagePath: location.pathname,
-      },
-    });
-  }, [location]);
+  let displayButton = true
+  if (id === 0) {
+    displayButton = false
+  }
 
-    const { id } = useParams();
-    const project = ProjectList[id];
-    const navigate = (url) => {
-      window.open(url, "_blank", "noreferrer");
-    }
-
-    let displayButton = true
-    if (id === 0) {
-      displayButton = false
-    }
-
-    return (
-    <div className="project">
-        <div className="header">
-          <h1>{project.name}</h1>
-        </div>
-        <img src={project.image} alt="project image"/>
-        <p className="skills"><b>Skills:</b> {project.skills}</p>
-        <p className="description">{project.describtion}</p>
-        
-        <button className="additionalLink" hidden={displayButton} onClick={() => navigate(project.additionalLink)}>YouTube Gameplay</button>
-    </div>
+  return (
+  <div className="project">
+      <div className="header">
+        <h1>{project.name}</h1>
+      </div>
+      <img src={project.image} alt="project image"/>
+      <p className="skills"><b>Skills:</b> {project.skills}</p>
+      <p className="description">{project.describtion}</p>
+      
+      <button className="additionalLink" hidden={displayButton} onClick={() => navigate(project.additionalLink)}>YouTube Gameplay</button>
+  </div>
   )
 }
 

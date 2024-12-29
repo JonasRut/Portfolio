@@ -1,28 +1,12 @@
 import React, {useEffect} from 'react'
-import { useLocation } from 'react-router-dom';
+import { withRouter } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHub from '@material-ui/icons/GitHub';
 import { IconButton } from '@material-ui/core';
 import "../styles/Home.css";
-import TagManager from 'react-gtm-module';
+import AppConfig from '../App.config';
 
 function Home() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const tagManagerArgs = {
-        gtmId: 'G-6BSYJ743Y3'
-    };
-    TagManager.initialize(tagManagerArgs);
-    
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'pageview',
-        pagePath: location.pathname,
-      },
-    });
-  }, [location]);
-
   const navigate = (url) => {
     window.open(url, "_blank", "noreferrer");
   }
@@ -70,4 +54,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

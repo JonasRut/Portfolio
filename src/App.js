@@ -9,25 +9,16 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import TagManager from 'react-gtm-module';
+import ReactGA from 'react-ga4'
+
+ReactGA.initialize("G-6BSYJ743Y3");
+ReactGA.send({ 
+  hitType: "pageview", 
+  page: window.location.pathname,
+});
 
 function App()
 {
-  const location = useLocation();
-
-  useEffect(() => {
-    const tagManagerArgs = {
-        gtmId: 'G-6BSYJ743Y3'
-    };
-    TagManager.initialize(tagManagerArgs);
-    
-    TagManager.dataLayer({
-      dataLayer: {
-        event: 'pageview',
-        pagePath: location.pathname,
-      },
-    });
-  }, [location]);
-
   return <div className="App">
       <Router>
         <Navbar />
