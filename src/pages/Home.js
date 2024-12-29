@@ -4,7 +4,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHub from '@material-ui/icons/GitHub';
 import { IconButton } from '@material-ui/core';
 import "../styles/Home.css";
-import AppConfig from '../App.config';
 
 function Home() {
   const navigate = (url) => {
