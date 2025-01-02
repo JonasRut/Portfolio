@@ -11,7 +11,7 @@ function Home() {
   }
 
   return (
-    <div className="home">
+    <div className="">
       <div className="about"> 
         <div className="intro">
           <h2> Hi, My Name is Jonas</h2>
