@@ -3,10 +3,7 @@ import { withRouter } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHub from '@material-ui/icons/GitHub';
 import { IconButton } from '@material-ui/core';
-import ProjectItem from "../components/ProjectItem";
-import { ProjectList } from '../helpers/ProjectList';
 import "../styles/Home.css";
-import "../styles/Projects.css"
 
 function Home() {
   const navigate = (url) => {
@@ -35,10 +32,8 @@ function Home() {
             </IconButton>
             </div>
           </div>
-          <div className="emails">
-              <button onClick={() => navigate("mailto:jonasrutkowski6@gmail.com")}>jonasrutkowski6@gmail.com</button>
-              <button onClick={() => navigate("mailto:jmr3062@rit.edu")}>jmr3062@rit.edu</button>
-          </div>
+          <button onClick={() => navigate("mailto:jonasrutkowski6@gmail.com")}>jonasrutkowski6@gmail.com</button>
+          <button onClick={() => navigate("mailto:jmr3062@rit.edu")}>jmr3062@rit.edu</button>
         </div>
       </div>
       <div className="skills"> 
@@ -53,16 +48,6 @@ function Home() {
             <span>Fusion 360, OnShape</span>
           </li>
         </ol>
-      </div>
-
-      {/* project display */}
-      <div className="projects">
-        <h1>My Personal Projects</h1>
-        <div className="projectList">
-            {ProjectList.map((project, index) => {
-                return <ProjectItem id={index} name={project.name} image={project.image} />
-            })}
-        </div>
       </div>
     </div>
   )
